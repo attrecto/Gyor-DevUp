@@ -1,0 +1,43 @@
+.header {
+  height: $header-height;
+  background: $header-color;
+  display: block;
+  position: fixed;
+  top: 0;
+  z-index: 500;
+  width: 100%;
+  -webkit-box-shadow: 0 4px 6px 0 rgba(50,50,50,.28);
+  -moz-box-shadow: 0 4px 6px 0 rgba(50,50,50,.28);
+  box-shadow: 0 4px 6px 0 rgba(50,50,50,.28);
+
+  a {
+    outline: none;
+  }
+
+  .logo {
+    margin: 0 0 0 50px;
+    width: 100%;
+
+    img {
+      float: left;
+    }
+
+    .title {
+      padding: 15px 15px 15px 105px;
+
+      h1 {
+        font-size: 20px;
+        color: $main-text-color;
+        text-transform: uppercase;
+      }
+
+      .sub-title {
+
+      }
+
+      .date {
+
+      }
+    }
+  }
+}

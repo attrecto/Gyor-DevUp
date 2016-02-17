@@ -1,0 +1,49 @@
+// Colors
+$background-color: #f4f5f6;
+$main-text-color: #009688;
+
+//Navbar
+$bgDefault: #009688;
+$bgHighlight: #00796B;
+$colDefault: #FFFFFF;
+$colHighlight: #B2DFDB;
+
+$red: #D32F2F;
+$indigo: #303F9F;
+
+// Header width
+$header-height: 75px;
+$left-navbar-width: 125px;
+$top-navbar-height: 38px;
+
+// Fonts
+$font-stack: Helvetica, sans-serif;
+
+// Grid breakpoints
+//
+// Define the minimum and maximum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+        xs: 0,
+  // Small screen / phone
+        sm: 544px,
+  // Medium screen / tablet
+        md: 768px,
+  // Large screen / desktop
+        lg: 992px,
+  // Extra large screen / wide desktop
+        xl: 1200px
+) !default;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+        sm: 576px,
+        md: 720px,
+        lg: 940px,
+        xl: 1140px
+) !default;

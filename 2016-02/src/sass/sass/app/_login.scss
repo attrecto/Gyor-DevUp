@@ -1,0 +1,17 @@
+.login {
+  width: 100%;
+  text-align: center;
+  background: $main-text-color;
+  position: fixed;
+  top: 0;
+  padding-top: 10%;
+  height: 100%;
+
+  .col-center-block {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
