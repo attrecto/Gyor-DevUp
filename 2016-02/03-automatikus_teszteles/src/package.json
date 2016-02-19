@@ -1,0 +1,16 @@
+{
+  "name": "your_name",
+  "version": "1.0.0",
+  "description": "Test angularjs.org",
+  "main": "protractor-conf.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "protractor-jasmine2-html-reporter": "0.0.5"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "author": "author_name",
+  "license": "ISC"
+}
