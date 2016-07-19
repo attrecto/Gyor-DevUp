@@ -1,0 +1,20 @@
+<md-sidenav style="height: 100%;" layout="column" class="md-sidenav-left md-whiteframe-z2"
+ md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" ng-cloack>
+  <md-toolbar class="md-theme-indigo">
+    <div class="md-toolbar-tools app-title">Angular plugins</div>
+  </md-toolbar>
+  <md-content layout="column">
+    <md-content layout-padding class="user-datas">
+      <p><strong>MOLNÁR JÓZSEF</strong></p>
+      <p>jozsef.molnar@attrecto.com</p>
+    </md-content>
+    <sidebar-menu>
+       <!--<sidebar-menu-item ui-sref='main.calculator' label='Calculator'></sidebar-menu-item>-->
+       <sidebar-menu-item ui-sref='main.textsearch' label='Get Words'></sidebar-menu-item>
+    </sidebar-menu>
+  </md-content>
+</md-sidenav>
+<md-content style="height: 100%;" flex layout="column">
+  <app-bar toggle-target="left" title="Dashboard"></app-bar>
+  <div data-ui-view class="main-view"></div>
+</md-content>

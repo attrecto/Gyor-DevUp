@@ -1,0 +1,7 @@
+<md-input-container class="md-block" flex-gt-sm>
+            <label>Search</label>
+            <input ng-model="searchedText">
+          </md-input-container>
+
+<md-button aria-label="true" disabled="disabled" class="md-raised" ng-repeat="word in getWords() track by $index">{{word}}</md-button>
+
