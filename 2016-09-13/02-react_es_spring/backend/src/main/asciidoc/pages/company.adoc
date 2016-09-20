@@ -1,0 +1,138 @@
+[[company-list]]
+= Cégek lekérése
+
+`GET` kérés az `/api/companies` url-re
+
+== Példa kérés
+
+include::{snippets}/listCompanies/http-request.adoc[]
+
+== Válasz felépítése
+
+include::{snippets}/listCompanies/response-fields.adoc[]
+
+== Példa válasz
+
+include::{snippets}/listCompanies/http-response.adoc[]
+
+[[company-list-workers]]
+= Cég dolgozóinak lekérése
+
+`GET` kérés az `/api/companies/{companyId}/workers` url-re
+
+== Útvonal változók
+
+include::{snippets}/listWorkers/path-parameters.adoc[]
+
+== Példa kérés
+
+include::{snippets}/listWorkers/http-request.adoc[]
+
+== Válasz felépítése
+
+include::{snippets}/listWorkers/response-fields.adoc[]
+
+== Példa válasz
+
+include::{snippets}/listWorkers/http-response.adoc[]
+
+[[company-get-worker]]
+= Egy dolgozó lekérése
+
+`GET` kérés az `/api/companies/{companyId}/workers/{workerId}` url-re
+
+== Útvonal változók
+
+include::{snippets}/getWorker/path-parameters.adoc[]
+
+== Példa kérés
+
+include::{snippets}/getWorker/http-request.adoc[]
+
+== Válasz felépítése
+
+include::{snippets}/getWorker/response-fields.adoc[]
+
+== Példa válasz
+
+include::{snippets}/getWorker/http-response.adoc[]
+
+[[company-create-worker]]
+= Egy dolgozó létrehozása
+
+`POST` kérés az `/api/companies/{companyId}/workers` url-re
+
+== Útvonal változók
+
+include::{snippets}/createWorker/path-parameters.adoc[]
+
+== Kérés felépítése
+
+include::{snippets}/createWorker/request-fields.adoc[]
+
+== Példa kérés
+
+include::{snippets}/createWorker/http-request.adoc[]
+
+== Példa válasz
+
+include::{snippets}/createWorker/http-response.adoc[]
+
+[[company-edit-worker]]
+= Egy dolgozó szerkesztése
+
+`PUT` kérés az `/api/companies/{companyId}/workers/{workerId}` url-re
+
+== Útvonal változók
+
+include::{snippets}/editWorker/path-parameters.adoc[]
+
+== Kérés felépítése
+
+include::{snippets}/editWorker/request-fields.adoc[]
+
+== Példa kérés
+
+include::{snippets}/editWorker/http-request.adoc[]
+
+== Példa válasz
+
+include::{snippets}/editWorker/http-response.adoc[]
+
+[[company-delete-worker]]
+= Egy dolgozó törlése
+
+`DELETE` kérés az `/api/companies/{companyId}/workers/{workerId}` url-re
+
+== Útvonal változók
+
+include::{snippets}/deleteWorker/path-parameters.adoc[]
+
+== Példa kérés
+
+include::{snippets}/deleteWorker/http-request.adoc[]
+
+== Példa válasz
+
+include::{snippets}/deleteWorker/http-response.adoc[]
+
+[[company-reserve-worker]]
+= Egy dolgozó lefoglalása
+
+`POST` kérés az `/api/companies/{companyId}/workers/{workerId}/reserve` url-re
+
+== Útvonal változók
+
+include::{snippets}/reserveWorker/path-parameters.adoc[]
+
+== Kérés felépítése
+
+include::{snippets}/reserveWorker/request-fields.adoc[]
+
+== Példa kérés
+
+include::{snippets}/reserveWorker/http-request.adoc[]
+
+== Példa válasz
+
+include::{snippets}/reserveWorker/http-response.adoc[]

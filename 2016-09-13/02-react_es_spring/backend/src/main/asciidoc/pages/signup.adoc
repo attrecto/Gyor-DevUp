@@ -1,0 +1,16 @@
+[[signup]]
+= Signup
+
+`POST` kérés az `api/signup` url-re
+
+== Kérés felépítése
+
+include::{snippets}/signup/request-fields.adoc[]
+
+== Példa kérés
+
+include::{snippets}/signup/http-request.adoc[]
+
+== Példa válasz
+
+include::{snippets}/signup/http-response.adoc[]

@@ -1,0 +1,20 @@
+spring:
+ datasource:
+  url: jdbc:postgresql://localhost:5432/${dbname:hrmanager}
+  username: hrmanager
+  password: password
+  platform: postgres
+  driverClassName: org.postgresql.Driver
+ jpa:
+  database: POSTGRESQL
+  hibernate:
+   ddl-auto: validate
+security:
+ basic: 
+  enabled: false
+server:
+ port: ${port:8080} 
+   
+jwt:
+ issuer: development
+ secret: 71dd6b3cc9824f718b079017e901f79b71dd6b3cc9824f718b079017e901f79b71dd6b3cc9824f718b079017e901f79b

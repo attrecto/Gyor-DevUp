@@ -1,0 +1,37 @@
+[[user-profile-self]]
+= Felhasználó saját profilja
+
+`GET` kérés az `api/users/me` url-re
+
+== Példa kérés
+
+include::{snippets}/selfProfile/http-request.adoc[]
+
+== Válasz felépítése
+
+include::{snippets}/selfProfile/response-fields.adoc[]
+
+== Példa válasz
+
+include::{snippets}/selfProfile/http-response.adoc[]
+
+[[user-profile]]
+= Felhasználó profilja
+
+`GET` kérés az `api/users/{userId}` url-re
+
+== Útvonal változók
+
+include::{snippets}/profile/path-parameters.adoc[]
+
+== Példa kérés
+
+include::{snippets}/profile/http-request.adoc[]
+
+== Válasz felépítése
+
+include::{snippets}/profile/response-fields.adoc[]
+
+== Példa válasz
+
+include::{snippets}/profile/http-response.adoc[]

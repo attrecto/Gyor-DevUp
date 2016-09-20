@@ -1,0 +1,46 @@
+nav {
+  height: 5.3rem;
+  display: block;
+  width: 100%;
+
+  .nav-title {
+    line-height: 5.3rem;
+  }
+}
+
+.nav-list {
+  list-style-type: none;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    float: left;
+    margin-left: 2.5rem;
+    position: relative;
+  }
+
+  a {
+    display: inline;
+    line-height: 5.3rem;
+  }
+}
+
+.badge {
+  background-color: #e3e3e3;
+  padding: 0.6rem;
+  margin: 0.3rem;
+  border-radius: 0.5rem;
+  position: relative;
+
+  .close {
+    cursor: pointer;
+  }
+
+  .close:before {
+      content: " ";
+      margin-left: 1rem;
+  }
+}

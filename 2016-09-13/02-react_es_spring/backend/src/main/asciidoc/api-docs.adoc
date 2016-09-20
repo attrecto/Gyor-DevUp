@@ -1,0 +1,14 @@
+= Human Resource Manager REST API DOCUMENTATION
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+
+include::{asciidocbase}/pages/signup.adoc[]
+include::{asciidocbase}/pages/login.adoc[]
+include::{asciidocbase}/pages/pendingRegistration.adoc[]
+include::{asciidocbase}/pages/user.adoc[]
+include::{asciidocbase}/pages/company.adoc[]
+include::{asciidocbase}/pages/workerReservation.adoc[]

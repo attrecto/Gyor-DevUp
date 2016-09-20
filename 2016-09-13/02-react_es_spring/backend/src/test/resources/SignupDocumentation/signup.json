@@ -1,0 +1,17 @@
+{
+    "user": {
+        "email": "alma@korte.hu",
+        "name":"Kis Pista",
+        "password":"titok"
+        
+    },
+    "company": {
+        "identifier":"teszt",
+        "name":"Teszt KFT.",
+        "contact":{
+            "name":"Kontakt Endre",
+            "email":"kontakt@endre.hu",
+            "phone":"+36102354584"
+        }
+    }
+}

@@ -1,0 +1,34 @@
+[[pending-registrations]]
+= Függő regisztrációk
+
+`GET` kérés az `/api/registrations/pending` url-re
+
+== Példa kérés
+
+include::{snippets}/pendingRegistrations/http-request.adoc[]
+
+== Válasz felépítése
+
+include::{snippets}/pendingRegistrations/response-fields.adoc[]
+
+== Példa válasz
+
+include::{snippets}/pendingRegistrations/http-response.adoc[]
+
+[[pending-registrations-decide]]
+= Döntés a függő regisztrációról
+Itt lehet elfogadni vagy elutasítani a függő regisztrációt
+
+`POST` kérés az `/api/registrations/pending/decide` url-re
+
+== Kérés felépítése
+
+include::{snippets}/decide/request-fields.adoc[]
+
+== Példa kérés
+
+include::{snippets}/decide/http-request.adoc[]
+
+== Példa válasz
+
+include::{snippets}/decide/http-response.adoc[]

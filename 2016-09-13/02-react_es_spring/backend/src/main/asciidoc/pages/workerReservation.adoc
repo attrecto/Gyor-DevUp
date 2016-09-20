@@ -1,0 +1,16 @@
+[[worker-reservation]]
+= Döntés dolgozó foglalásról
+
+`POST` kérés az `/api/workerReservations/decide` url-re
+
+== Kérés felépítése
+
+include::{snippets}/decideWorkerRegistration/request-fields.adoc[]
+
+== Példa kérés
+
+include::{snippets}/decideWorkerRegistration/http-request.adoc[]
+
+== Példa válasz
+
+include::{snippets}/decideWorkerRegistration/http-response.adoc[]

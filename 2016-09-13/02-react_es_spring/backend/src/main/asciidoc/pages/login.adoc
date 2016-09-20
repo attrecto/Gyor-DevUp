@@ -1,0 +1,20 @@
+[[login]]
+= Login
+
+`POST` kérés az `api/login` url-re
+
+== Kérés felépítése
+
+include::{snippets}/login/request-fields.adoc[]
+
+== Példa kérés
+
+include::{snippets}/login/http-request.adoc[]
+
+== Válasz felépítése
+
+include::{snippets}/login/response-fields.adoc[]
+
+== Példa válasz
+
+include::{snippets}/login/http-response.adoc[]
