@@ -1,0 +1,33 @@
+{
+  "name": "fbdemo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "firebase": "^3.9.0",
+    "moment": "^2.18.1",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.6.0",
+    "redux-saga": "^0.15.3",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "enzyme": "^2.8.2",
+    "jest-enzyme": "2.x",
+    "react-scripts": "0.9.5",
+    "react-test-renderer": "^15.5.4",
+    "redux-mock-store": "^1.2.3",
+    "sinon": "^2.2.0"
+  },
+  "scripts": {
+    "flow": "flow",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
