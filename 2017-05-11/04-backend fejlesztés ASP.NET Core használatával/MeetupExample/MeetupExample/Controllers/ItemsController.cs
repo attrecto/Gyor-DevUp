@@ -6,9 +6,11 @@ using MeetupExample.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MeetupExample.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MeetupExample.Controllers
 {
+    //[Authorize]
     [Produces("application/json")]
     [Route("api/Items")]
     public class ItemsController : Controller

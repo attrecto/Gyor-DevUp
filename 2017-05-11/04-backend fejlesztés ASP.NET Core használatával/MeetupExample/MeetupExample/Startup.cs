@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.EntityFrameworkCore;
 using MeetupExample.Repositories;
+using MeetupExample.Utilities;
 
 namespace MeetupExample
 {
@@ -40,9 +41,16 @@ namespace MeetupExample
             // Add framework services.
             services.AddMvc();
 
+            // Inject an implementation of ISwaggerProvider with defaulted settings applied
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+            });
+
+            // Use token the swagger
+            services.ConfigureSwaggerGen(options =>
+            {
+                options.OperationFilter<AuthorizationHeaderParameterOperationFilter>();
             });
         }
 
