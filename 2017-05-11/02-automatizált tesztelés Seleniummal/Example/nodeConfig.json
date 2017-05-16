@@ -1,0 +1,35 @@
+{
+  "capabilities":
+  [
+    {
+      "browserName": "firefox",
+      "maxInstances": 4,
+      "seleniumProtocol": "WebDriver"
+    },
+    {
+      "browserName": "chrome",
+      "maxInstances": 4,
+      "seleniumProtocol": "WebDriver"
+    },
+    {
+      "browserName": "safari",
+      "maxInstances": 4,
+      "seleniumProtocol": "WebDriver"
+    }
+  ],
+
+  "maxSession": 4,
+  "port": 5555,
+  "register": true,
+  "registerCycle": 5000,
+  "hub": "http://127.0.0.1:4444",
+  "nodeStatusCheckTimeout": 5000,
+  "nodePolling": 5000,
+  "role": "node",
+  "unregisterIfStillDownAfter": 60000,
+  "downPollingLimit": 2,
+  "debug": false,
+  "servlets" : [],
+  "withoutServlets": [],
+  "custom": {}
+}
