@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="theme-color" content="#008"/>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="shortcut icon" type="image/png" href="devup-128.png"/>
+    <link rel="manifest" href="manifest.json"/>
+    <title>Győr DevUp PWA teszt</title>
+    <style type="text/css">
+	body {
+		background-color: #6dcef5;
+		color: #fff;
+	}
+	div.center {
+		text-align: center;
+	}
+	img {
+		max-width: 80%;
+		margin: 10%;
+	}
+	h2 {
+		border: 1px solid #fff;
+		border-radius: 0.2rem;
+	}
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
+	a:visited, a:hover {
+		color: #fff;
+	}
+    </style>
+</head>
+<body>
+    <div class="center">
+	<img src="devup-512.png"/>
+	<h2><a href="lorem.html">Lorem ipsum</a></h2>
+	<h2><a href="https://products.symbion.hu/">Symbion Products Kft.</a></h2>
+	<div id="install"></div>
+    </div>
+    <script>
+	window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt)
+	function handleBeforeInstallPrompt(evt) {
+	    console.log('beforeinstallprompt')
+	    evt.preventDefault()
+	    window.installevt = evt
+	    document.getElementById('install').innerHTML
+		= '<button onClick="window.installevt.prompt()">Telepítés</button>'
+	}
+
+	if ('serviceWorker' in navigator) {
+	    navigator.serviceWorker.register('sw.js')
+	    	.then(() => console.log('service worker installed'))
+		.catch(err => console.error('Error', err));
+	}
+    </script>
+</body>
+</html>

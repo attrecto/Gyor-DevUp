@@ -1,0 +1,21 @@
+{
+	"short_name": "Győr DevUp PWA",
+	"name": "Győr DevUp PWA",
+	"icons": [
+		{
+			"src": "devup-192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "devup-512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": "/pwa/",
+	"background_color": "#6dcef5",
+	"display": "standalone",
+	"scope": "/pwa/",
+	"theme_color": "#fff"
+}
